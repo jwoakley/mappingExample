@@ -26,16 +26,16 @@ function draw() {
    //syntax for mapping:
    // map(value, start1, start2, stop1, stop2);
   r =   map(mouseX, 0, windowWidth, 0, 255);  
-  g =   map(mouseY, windowWidth, 0, 255, 0);  
-  b =   map(mouseX, windowWidth, 0, 0, 255);
+  g =   map(mouseX, windowWidth, 0, 255, 0);  
+  b =   map(mouseY, 0, windowHeight, 0, 255);
 
   background(r, g, b);
   
-  drawEllipses ();
+  drawEllipses (); // calling on the drawEllipses function
 
 }
 
-function drawEllipses (){
+function drawEllipses (){  //drawEllipses are kept outside the draw function
 
   fill(r);
   stroke(g);
