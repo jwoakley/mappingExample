@@ -1,12 +1,11 @@
-## Empty Example for P5.js
-#### by Scott Kildall
+## Mapping Example for P5.js
+#### by Joshua oakley
 
 
 
 ### Overview
-This is a modified version of the p5.js Empty Example that simplifies the directory structure
+This is a modified version of the p5.js Mapping Example 
 
 
 ### Technical Details
 
-Modify the sketch.js setup() and draw() functions and begin adding functions!
