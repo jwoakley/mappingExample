@@ -26,7 +26,7 @@ function draw() {
    //syntax for mapping:
    // map(value, start1, start2, stop1, stop2);
   r =   map(mouseX, 0, windowWidth, 0, 255);  
-  g =   map(mouseX, windowWidth, 0, 255, 0);  
+  g =   map(mouseX, windowWidth, 0, 0, 255);  
   b =   map(mouseY, 0, windowHeight, 0, 255);
 
   background(r, g, b);
