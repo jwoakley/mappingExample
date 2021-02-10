@@ -5,51 +5,42 @@ by: JoshuaWilderOakley
 
 overview:
 
-a simple example of the mapping function in p5.js
+a simple example of the mapping function in p5.js in black and white
 
 ----------------------------------------------------
 
 notes:
+
+in the upper left quadrant the background is (255) and the ellipse is (0)
+in the lower left quadrant the background is (255) and the ellipse is (255)
+in the upper right quadrant the background is (0) and the ellipse is (0)
+in the lower right quadrant the background is (0) and the ellipse is (255)
+
+
 
 ***************************************************/
 
 
 // Setup code goes here
 function setup() {
-  createCanvas(windowWidth, windowHeight);  //setting for responsive page
-  
+  createCanvas(1920, 1080);  //setting for responsive page 
  }
-
 
 // Draw code goes here
 function draw() {
    //syntax for mapping:
    // map(value, start1, start2, stop1, stop2);
-  r =   map(mouseX, 0, windowWidth, 0, 255);  
-  g =   map(mouseX, windowWidth, 0, 0, 255);  
-  b =   map(mouseY, 0, windowHeight, 0, 255);
+  x = map(mouseX, 0, 1920, 0, 255);  
+  y = map(mouseY, 0, 1080, 255, 0);  
 
-  background(r, g, b);
+  background(x);
   
   drawEllipses (); // calling on the drawEllipses function
-
 }
 
 function drawEllipses (){  //drawEllipses are kept outside the draw function
 
-  fill(r);
-  stroke(g);
-  strokeWeight(26);
-  ellipse(mouseX * 1.2, mouseY * 1.2, 200, 200);
-
-  fill(g);
-  stroke(b);
-  strokeWeight(16);
-  ellipse(mouseX, mouseY, 150, 150);
-
-  fill(b);
-  stroke(g);
-  strokeWeight(6);
-  ellipse(mouseX * 1.1, mouseY * 1.1, 100, 100); 
-
+  fill(y);
+  noStroke();
+  ellipse(mouseX, mouseY, 100, 100);
 }
