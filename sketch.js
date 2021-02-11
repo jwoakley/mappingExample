@@ -29,7 +29,7 @@ function setup() {
 // Draw code goes here
 function draw() {
    //syntax for mapping:
-   // map(value, start1, start2, stop1, stop2);
+   // map(value, start1, stop1, start2, stop2);
   x = map(mouseX, 0, 1920, 0, 255);  
   y = map(mouseY, 0, 1080, 255, 0);  
 
